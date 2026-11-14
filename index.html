@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -282,10 +281,8 @@
 
       message.textContent = '';
 
-      // Lecteur officiel YouTube
-      player.src =
-        `https://www.youtube.com/embed/${videoId}?origin=${encodeURIComponent(location.origin)}`;
-
+      // Lecteur nocookie
+      player.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
       videoWrap.classList.add('visible');
 
     });
